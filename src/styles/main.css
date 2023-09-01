@@ -3,11 +3,13 @@ html, body{
     margin: 0;
 }
 
+
+
 .header{
     display: flex;
     max-width: 100%;
     background-color: red;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 80px 10px 80px;
     margin-top: 40px;
 }
 
@@ -28,4 +30,33 @@ html, body{
 
 .nav-bar li a{
     text-decoration: none;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.about-me{
+    margin: 20px;
+    outline: 1px solid black;
+    max-width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me img{
+    max-width: 30%;
+    height: auto;
+}
+
+.about-me-text{
+    border: 1px solid red;
+    max-width: 60%;
+    align-self: center;
+    padding: 10px 20px 10px 20px;
+    
 }
