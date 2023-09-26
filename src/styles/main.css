@@ -79,12 +79,27 @@ html, body{
 
 
 
-
 .project-section{
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(2, 50%);
-    gap: 10px;
+    display: flex;
+    flex-direction: row;
     max-width: 60%;
     min-width: 40%;
+    outline: 1px solid black;
+}
+.project-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card{
+    outline: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px 0 0;
+    padding: 10px;
+    box-shadow: 5px 5px 5px grey;;
+}
+.project-picture{
+    width: 85%;
+    height:auto;
 }
