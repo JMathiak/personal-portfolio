@@ -10,7 +10,6 @@ html, body{
     max-width: 100%;
     background-color: red;
     padding: 10px 80px 10px 80px;
-    margin-top: 40px;
 }
 
 .nav-container{
@@ -102,4 +101,26 @@ html, body{
 .project-picture{
     width: 85%;
     height:auto;
+}
+
+.github-icon{
+    width: 26px;
+}
+
+.github-link{
+    padding: 0px 3px 0 0;
+}
+
+.external-icon{
+    width: 26px;
+}
+
+.external-link{
+    padding: 0px 3px 0 0;
+}
+
+.project-icons{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
