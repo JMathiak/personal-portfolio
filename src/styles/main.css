@@ -124,3 +124,34 @@ html, body{
     justify-content: flex-end;
     width: 100%;
 }
+
+.contact-me{
+    max-width: 60%;
+    min-width: 40%;
+    display: flex;
+}
+
+.contact-info{
+    justify-self: flex-start;
+}
+
+.contact-picture{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.contact-picture img{
+    width: 50%;
+    height: auto;
+}
+
+.contact-address p
+{
+    margin: 0;
+}
+
+/* .contact-me img{
+    max-width: 20%;
+    height: auto;
+} */
