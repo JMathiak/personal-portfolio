@@ -129,6 +129,7 @@ html, body{
     max-width: 60%;
     min-width: 40%;
     display: flex;
+    border: 1px solid black;
 }
 
 .contact-info{
@@ -142,7 +143,7 @@ html, body{
 }
 
 .contact-picture img{
-    width: 50%;
+    width: 65%; /* 50% for bigger monitors */
     height: auto;
 }
 
