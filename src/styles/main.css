@@ -130,6 +130,7 @@ html, body{
     min-width: 40%;
     display: flex;
     border: 1px solid black;
+    margin: 20px 0px 20px 0px;
 }
 
 .contact-info{
