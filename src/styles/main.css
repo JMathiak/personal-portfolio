@@ -96,10 +96,11 @@ html, body{
     flex-direction: column;
     margin: 10px 10px 0 0;
     padding: 10px;
-    box-shadow: 5px 5px 5px grey;;
+    box-shadow: 5px 5px 5px grey;
+    height: 400px;
 }
 .project-picture{
-    width: 85%;
+    max-width: 85%;
     height:auto;
 }
 
@@ -140,11 +141,12 @@ html, body{
 .contact-picture{
     display: flex;
     justify-content: flex-end;
-    width: 50%;
+    max-width: 50%;
+    height: auto;
 }
 
 .contact-picture img{
-    width: 65%; /* 50% for bigger monitors */
+   max-width: 65%; /* 50% for bigger monitors */
     height: auto;
 }
 
@@ -157,3 +159,20 @@ html, body{
     max-width: 20%;
     height: auto;
 } */
+
+
+@media (max-width: 600px)
+{
+    .about-me{
+        flex-direction: column;
+    }
+
+    .about-me-text{
+        max-width: 100%;
+    }
+
+    .about-me img{
+        max-width: 100%;
+        
+    }
+}
