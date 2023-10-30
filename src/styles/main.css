@@ -64,15 +64,17 @@ html, body{
 
 
 .project-section{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(2, 50%);
+    
     max-width: 60%;
     min-width: 40%;
     /* outline: 1px solid black; */
 }
 .project-column{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .project-card{
@@ -182,17 +184,21 @@ html, body{
     }
 
     .project-section{
-        flex-direction: column;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(6, 1fr);
         max-width: 80%;
+    }
+    .project-column{
+        flex-direction: column;
     }
 
     .project-description{
-        font-size: 20px;
+        font-size: 24px;
         
     }
 
     .me-desc{
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .contact-me{
