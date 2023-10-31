@@ -1,6 +1,12 @@
+@font-face {
+    font-family: Josefin;
+    src: url(./Josefin_Slab/JosefinSlab-VariableFont_wght.ttf);
+}
+
 html, body{
     padding: 0;
     margin: 0;
+    font-family: Josefin;
 }
 
 
@@ -13,13 +19,11 @@ html, body{
 }
 
 .nav-container{
-    margin-left: auto;
     align-self: center;
 }
 
 .nav-bar{
     list-style-type: none;
-    
 }
 
 .nav-bar li{
@@ -28,7 +32,8 @@ html, body{
 }
 
 .nav-bar li a{
-    text-decoration: none;
+    text-decoration: underline;
+    color: black;
 }
 
 .main-content{
@@ -46,17 +51,27 @@ html, body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: beige;
 }
 .about-me img{
     max-width: 30%;
     height: auto;
 }
+.about-img-head{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
 
+.about-me-head{
+    font-size: 48px;
+}
 .about-me-text{
     border: 1px solid red;
-    max-width: 60%;
+    max-width: 100%;
     align-self: center;
     padding: 10px 20px 10px 20px;
+    font-size: 24px;
     
 }
 
@@ -87,6 +102,8 @@ html, body{
     min-height: 400px;
     justify-content: space-between;
     background-color: beige;
+    font-family: Josefin;
+    font-size: 20px;
 }
 .con{
     display: flex; 
@@ -131,10 +148,13 @@ html, body{
     display: flex;
     border: 1px solid black;
     margin: 20px 0px 20px 0px;
+    font-size: 24px;
+    background-color: beige;
 }
 
 .contact-info{
     justify-self: flex-start;
+    margin: 0 0 0 20px;
 }
 
 .contact-picture{
@@ -154,19 +174,20 @@ html, body{
     margin: 0;
 }
 
+
 /* .contact-me img{
     max-width: 20%;
     height: auto;
 } */
 
 
-@media (max-width: 600px)
+@media (max-width: 500px)
 {
     .header{
         display: flex;
         max-width: 100%;
         background-color: red;
-        padding: 10px 10px 10px 30px;
+        padding: 10px 10px 10px 29px;
     }
 
     .about-me{
@@ -176,6 +197,10 @@ html, body{
 
     .about-me-text{
         max-width: 100%;
+    }
+
+    .about-img-head{
+        flex-direction: column-reverse;
     }
 
     .about-me img{
@@ -222,4 +247,52 @@ html, body{
      .project-card{
         justify-content: space-between;
      }
+}
+
+
+@media (min-width: 500px) and (max-width: 1000px){
+
+    .header{
+        display: flex;
+        max-width: 100%;
+        background-color: red;
+        padding: 10px 10px 10px 29px;
+    }
+
+    .about-me{
+        max-width: 100%;
+                        ;
+    }
+
+    .about-me img{
+        max-width: 40%;
+        height: auto;
+        
+    }
+
+    .about-img-head{
+        display: flex;
+    }
+    
+    .about-me-text{
+        max-width: 100%;
+       
+
+    }
+    
+    .project-section{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(3, 33%);
+        max-width: 90%;
+    }
+
+    .contact-me{
+        max-width: 90%
+    }
+
+    .contact-picture img{
+        max-width: 85%; /* 50% for bigger monitors */
+         height: auto;
+     }
+
 }
